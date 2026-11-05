@@ -1,0 +1,3 @@
+﻿model_name,tespit_sayisi,precision_yuzde,recall_yuzde,ort_gecikme_ms,islenen_goruntu,gercek_maliyet_usd
+yolo11n_seg,3097,69.91,94.91,38.484,262,
+yolov8n_seg,3232,66.77,94.61,40.594,262,

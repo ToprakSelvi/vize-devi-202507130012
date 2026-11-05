@@ -1,0 +1,10 @@
+{
+  "yolov8n_seg": {
+    "trained_this_run": true,
+    "training_seconds": 308.8
+  },
+  "yolo11n_seg": {
+    "trained_this_run": true,
+    "training_seconds": 298.3
+  }
+}

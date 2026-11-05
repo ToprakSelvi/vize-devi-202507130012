@@ -1,0 +1,13 @@
+﻿model_name,package_type,dogru_tp,yanlis_fp,kacirilan_fn,precision_yuzde,recall_yuzde
+yolo11n_seg,can,361,225,7,61.60,98.10
+yolov8n_seg,can,365,233,3,61.04,99.18
+yolo11n_seg,carton_beverage,194,84,44,69.78,81.51
+yolov8n_seg,carton_beverage,196,168,42,53.85,82.35
+yolo11n_seg,glass_bottle,469,202,30,69.90,93.99
+yolov8n_seg,glass_bottle,474,213,25,69.00,94.99
+yolo11n_seg,jar,218,31,6,87.55,97.32
+yolov8n_seg,jar,214,22,10,90.68,95.54
+yolo11n_seg,plastic_bottle,695,315,20,68.81,97.20
+yolov8n_seg,plastic_bottle,692,342,23,66.92,96.78
+yolo11n_seg,tube,228,75,9,75.25,96.20
+yolov8n_seg,tube,217,96,20,69.33,91.56

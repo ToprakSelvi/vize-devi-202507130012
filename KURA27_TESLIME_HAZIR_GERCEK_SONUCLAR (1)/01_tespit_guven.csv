@@ -1,0 +1,15 @@
+﻿model_name,package_type,tespit_sayisi,ortalama_guven
+yolo11n_seg,can,442,0.7937
+yolo11n_seg,carton_beverage,370,0.5133
+yolo11n_seg,etiketsiz,18,0.3314
+yolo11n_seg,glass_bottle,703,0.6730
+yolo11n_seg,jar,266,0.7974
+yolo11n_seg,plastic_bottle,977,0.6751
+yolo11n_seg,tube,321,0.6375
+yolov8n_seg,can,450,0.8061
+yolov8n_seg,carton_beverage,411,0.4744
+yolov8n_seg,etiketsiz,17,0.2766
+yolov8n_seg,glass_bottle,735,0.6712
+yolov8n_seg,jar,280,0.7743
+yolov8n_seg,plastic_bottle,989,0.6814
+yolov8n_seg,tube,350,0.5707

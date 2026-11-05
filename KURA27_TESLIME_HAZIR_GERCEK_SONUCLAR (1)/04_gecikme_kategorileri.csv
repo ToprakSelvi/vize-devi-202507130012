@@ -1,0 +1,7 @@
+﻿model_name,hiz,goruntu_sayisi,oran_yuzde
+yolo11n_seg,fast,250,95.42
+yolo11n_seg,medium,11,4.20
+yolo11n_seg,slow,1,0.38
+yolov8n_seg,fast,249,95.04
+yolov8n_seg,medium,10,3.82
+yolov8n_seg,slow,3,1.15

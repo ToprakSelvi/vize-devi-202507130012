@@ -1,0 +1,58 @@
+{
+  "deney": "Kura 27 - Robotik - Perakende ve E-ticaret / görüntü işleyen kamera",
+  "source": "https://huggingface.co/datasets/industoai/PackDet",
+  "pretrained_sources": [
+    "yolov8n-seg.pt",
+    "yolo11n-seg.pt"
+  ],
+  "dataset_license": "CC BY-NC 4.0",
+  "test_split": "PackDet resmi validation + train havuzundan ayrilmis %20 holdout test; hicbir test goruntusu egitime/epoch secimine girmedi",
+  "model_names": [
+    "yolov8n_seg",
+    "yolo11n_seg"
+  ],
+  "classes": {
+    "0": "plastic_bottle",
+    "1": "glass_bottle",
+    "2": "can",
+    "3": "jar",
+    "4": "carton_beverage",
+    "5": "tube"
+  },
+  "dataset_train_total": 730,
+  "training_images": 496,
+  "tuning_images": 88,
+  "extra_holdout_images": 146,
+  "test_images": 262,
+  "test_ground_truth_objects": 2281,
+  "model_detection_rows": {
+    "yolov8n_seg": 3232,
+    "yolo11n_seg": 3097
+  },
+  "total_detections": 6329,
+  "min_500_requirement": true,
+  "confidence_threshold": 0.05,
+  "object_matching_iou": 0.5,
+  "imgsz": 640,
+  "epochs": 12,
+  "batch": 8,
+  "seed": 27,
+  "device": "0",
+  "python_version": "3.13.16",
+  "pytorch_version": "2.11.0+cu130",
+  "ultralytics_version": "8.4.202",
+  "training": {
+    "yolov8n_seg": {
+      "trained_this_run": true,
+      "training_seconds": 308.8
+    },
+    "yolo11n_seg": {
+      "trained_this_run": true,
+      "training_seconds": 298.3
+    }
+  },
+  "cost_usd": null,
+  "methodology_note": "Test kümesi eğitime veya model seçimine dahil edilmedi. Test gecikmesi wall-clock: görüntü okuma + model.predict çağrısı; her model-görüntü çifti bir ölçüm. Confidence doğruluk değildir; TP için sınıf ve IoU>=0.5 gereklidir. Dolar maliyeti veri olmadığı için NULL.",
+  "captured_at_note": "PackDet kaynak görüntüleri için capture timestamp verilmedi; uydurulmadı.",
+  "package_type_note": "images.package_type, referans nesne etiketleri içinde görüntüde en yaygın sınıftır; her görüntü birçok sınıf içerebilir. Nesne sınıfı için true_labels ve detection_matches kullanılmalı."
+}

@@ -1,0 +1,87 @@
+{
+  "verification_time_utc": "2026-11-05T13:19:07.361958+00:00",
+  "actual_experiment_manifest": {
+    "deney": "Kura 27 - Robotik - Perakende ve E-ticaret / görüntü işleyen kamera",
+    "source": "https://huggingface.co/datasets/industoai/PackDet",
+    "pretrained_sources": [
+      "yolov8n-seg.pt",
+      "yolo11n-seg.pt"
+    ],
+    "dataset_license": "CC BY-NC 4.0",
+    "test_split": "PackDet resmi validation + train havuzundan ayrilmis %20 holdout test; hicbir test goruntusu egitime/epoch secimine girmedi",
+    "model_names": [
+      "yolov8n_seg",
+      "yolo11n_seg"
+    ],
+    "classes": {
+      "0": "plastic_bottle",
+      "1": "glass_bottle",
+      "2": "can",
+      "3": "jar",
+      "4": "carton_beverage",
+      "5": "tube"
+    },
+    "dataset_train_total": 730,
+    "training_images": 496,
+    "tuning_images": 88,
+    "extra_holdout_images": 146,
+    "test_images": 262,
+    "test_ground_truth_objects": 2281,
+    "model_detection_rows": {
+      "yolov8n_seg": 3232,
+      "yolo11n_seg": 3097
+    },
+    "total_detections": 6329,
+    "min_500_requirement": true,
+    "confidence_threshold": 0.05,
+    "object_matching_iou": 0.5,
+    "imgsz": 640,
+    "epochs": 12,
+    "batch": 8,
+    "seed": 27,
+    "device": "0",
+    "python_version": "3.13.16",
+    "pytorch_version": "2.11.0+cu130",
+    "ultralytics_version": "8.4.202",
+    "training": {
+      "yolov8n_seg": {
+        "trained_this_run": true,
+        "training_seconds": 308.8
+      },
+      "yolo11n_seg": {
+        "trained_this_run": true,
+        "training_seconds": 298.3
+      }
+    },
+    "cost_usd": null,
+    "methodology_note": "Test kümesi eğitime veya model seçimine dahil edilmedi. Test gecikmesi wall-clock: görüntü okuma + model.predict çağrısı; her model-görüntü çifti bir ölçüm. Confidence doğruluk değildir; TP için sınıf ve IoU>=0.5 gereklidir. Dolar maliyeti veri olmadığı için NULL.",
+    "captured_at_note": "PackDet kaynak görüntüleri için capture timestamp verilmedi; uydurulmadı.",
+    "package_type_note": "images.package_type, referans nesne etiketleri içinde görüntüde en yaygın sınıftır; her görüntü birçok sınıf içerebilir. Nesne sınıfı için true_labels ve detection_matches kullanılmalı."
+  },
+  "postgres_version": "PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit",
+  "model_counts": {
+    "yolov8n_seg": 3232,
+    "yolo11n_seg": 3097
+  },
+  "verified_input_hashes": {
+    "images.csv": "c1a3df06d1b00ed9b213ae5c586c355e80f5f53351df7512eba6820c948b6613",
+    "true_labels.csv": "a0eb0a01c08f5789156415f801059a689bb77eceaaa1a1854ae3bc9d8bdd6eb0",
+    "model_detections.csv": "cd64392547bbb3fb3889bdf868fff1d0ddc218c193184b861160abb1834aa5bd",
+    "true_label_boxes.csv": "cc2c2c5a5b031add43a57770abf23a4c0b18c22717cb91167ee232a91802ee23",
+    "detection_boxes.csv": "5466249d32229fafb1528b74612e90a48aea8cc69809e50949764f1df33ca355",
+    "model_inference_runs.csv": "6767f7ca721c72c486bd15e1a8d60c780ac83d45865a9ab15cc26c3408b0dc53",
+    "detection_matches.csv": "e9c3b93544e4365afcf17ba05209a996f9fbcf26cf90066bf2f8ac30ed51dd51"
+  },
+  "quality": {
+    "kalite_boslar": {
+      "bozuk_tespit": 0,
+      "bozuk_goruntu": 0,
+      "bozuk_referans": 0
+    },
+    "kalite_tutarlilik": {
+      "tutarsiz_model_goruntu": 0
+    }
+  },
+  "min_rows_passed": true,
+  "exact_two_models_passed": true
+}

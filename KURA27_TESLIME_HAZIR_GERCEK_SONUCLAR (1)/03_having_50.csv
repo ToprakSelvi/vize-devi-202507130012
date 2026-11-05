@@ -1,0 +1,13 @@
+﻿model_name,package_type,tespit_sayisi
+yolo11n_seg,plastic_bottle,977
+yolo11n_seg,glass_bottle,703
+yolo11n_seg,can,442
+yolo11n_seg,carton_beverage,370
+yolo11n_seg,tube,321
+yolo11n_seg,jar,266
+yolov8n_seg,plastic_bottle,989
+yolov8n_seg,glass_bottle,735
+yolov8n_seg,can,450
+yolov8n_seg,carton_beverage,411
+yolov8n_seg,tube,350
+yolov8n_seg,jar,280
